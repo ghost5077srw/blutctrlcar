@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+body {
+    background-color: gray;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(../1.png);                 
+    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 27px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid rgb(253, 253, 253);
+    transition: 253ms ease-in;
+}
+
+ul li a:hover{
+  
+    color: rgb(0, 0, 0);
+    background-color: rgb(154, 191, 235);
+}
+
+ul li.uperbtn a:hover{
+    border-radius: 20px;
+    background-image: url(./Untitled.png);
+
+}
+
+ul li.active a{
+    background-color: rgb(235, 0, 0);
+    color: #fff;
+}
+
+ul li.active a:hover{
+    background-color: rgb(73, 73, 73);
+    color: rgb(204, 204, 204);
+    border-radius: 15px;
+}
+
+.logo img{
+    float: left;
+    width: auto;
+    height: 80px;
+    margin-top: 15px;
+}
+
+.logo img:hover{
+    cursor:none;
+    transform: scale(1.1);
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title h2{
+    color: rgb(37, 36, 36);
+    font-size: 22px;        
+}
+
+.title h1{
+    color: rgb(148, 235, 247);
+    font-size: 50px;
+}
+
+.title h1:hover{
+    cursor: initial;
+}
+
+.button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 150ms ease-in-out;
+    border-radius: 3.5px;
+}
+
+.btnt{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 150ms ease-in-out;
+    border-radius: 3.5px;
+}
+
+.btn:hover{
+    background: linear-gradient(to left, #c7faf7, #74a2ad);
+    color: rgb(24, 21, 21);
+    border-radius: 25px;
+    transform: scaleZ(29px);
+}
+
+.btnt:hover{
+    background: linear-gradient(to left, #76a2ad, #c7faf7);
+    color: rgb(24, 21, 21);
+    border-radius: 25px;
+    transform: scaleZ(29px);
+}
+      
+.box-area li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: #90ebde;
+    animation: animate 20s linear infinite;
+    bottom: 8px;
+}
+
+.box-area li:nth-child(1){
+    left: 86%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+    animation-duration: 9s;  
+    border-radius: 100px; 
+}
+
+.box-area li:nth-child(2){
+    left: 22%;
+    width: 45px;
+    height: 45px;
+    animation-delay: 1.5s;   
+    animation-duration: 10s;
+    border-radius: 8px;
+}
+
+.box-area li:nth-child(3){
+    left: 70%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 5.5s;
+    animation-duration: 11s;
+    border-radius: 8px;
+}
+
+.box-area li:nth-child(4){
+    left: 5%;
+    width: 55px;
+    height: 55px;
+    animation-delay: 5s;
+    animation-duration: 7s;
+    border-radius: 100px;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}
